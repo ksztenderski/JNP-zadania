@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/new_task_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewTaskFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_new_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/toolbar_new_task"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_new_task"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/new_task_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/big_padding"
+                android:gravity="center"
+                android:hint="@string/hint_new_task_name"
+                android:inputType="textAutoComplete"
+                android:minHeight="@dimen/min_height"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:typeface="normal" />
+
+            <Button
+                android:id="@+id/choose_category_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/big_padding"
+                android:background="#C0C0C0"
+                android:text="@string/choose_category"
+                android:textColor="@color/buttonLabel" />
+
+            <Switch
+                android:id="@+id/is_weekly_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/big_padding"
+                android:text="@string/is_weekly"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/session_number_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/big_padding"
+                android:text="@string/sess_no_title"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/new_task_no_sessions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/big_padding"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/hint_new_task_no_sessions"
+                android:inputType="number"
+                android:minHeight="@dimen/min_height"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/weekly_sessions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/mon_session_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/big_padding"
+                    android:gravity="center"
+                    android:hint="@string/mon_s_no"
+                    android:inputType="number"
+                    android:minHeight="@dimen/min_height"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:typeface="normal" />
+
+                <EditText
+                    android:id="@+id/tue_session_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/big_padding"
+                    android:gravity="center"
+                    android:hint="@string/tue_s_no"
+                    android:inputType="number"
+                    android:minHeight="@dimen/min_height"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:typeface="normal" />
+
+                <EditText
+                    android:id="@+id/wed_session_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/big_padding"
+                    android:gravity="center"
+                    android:hint="@string/wed_s_no"
+                    android:inputType="number"
+                    android:minHeight="@dimen/min_height"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:typeface="normal" />
+
+                <EditText
+                    android:id="@+id/thu_session_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/big_padding"
+                    android:gravity="center"
+                    android:hint="@string/thu_s_no"
+                    android:inputType="number"
+                    android:minHeight="@dimen/min_height"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:typeface="normal" />
+
+                <EditText
+                    android:id="@+id/fri_session_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/big_padding"
+                    android:gravity="center"
+                    android:hint="@string/fri_s_no"
+                    android:inputType="number"
+                    android:minHeight="@dimen/min_height"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:typeface="normal" />
+
+                <EditText
+                    android:id="@+id/sat_session_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/big_padding"
+                    android:gravity="center"
+                    android:hint="@string/sat_s_no"
+                    android:inputType="number"
+                    android:minHeight="@dimen/min_height"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:typeface="normal" />
+
+                <EditText
+                    android:id="@+id/sun_session_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/big_padding"
+                    android:gravity="center"
+                    android:hint="@string/sun_s_no"
+                    android:inputType="number"
+                    android:minHeight="@dimen/min_height"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/big_padding"
+                android:background="@color/colorPrimary"
+                android:text="@string/button_save"
+                android:textColor="@color/buttonLabel" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/timerFragment"
+            android:enabled="true"
+            android:icon="@drawable/ic_timer_black_24dp"
+            android:title="@string/pomodoro" />
+
+    <item
+            android:id="@+id/queueFragment"
+            android:enabled="true"
+            android:icon="@drawable/ic_today_black_24dp"
+            android:title="@string/today" />
+
+    <item
+            android:id="@+id/taskListFragment"
+            android:enabled="true"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="@string/tasks" />
+    <item
+            android:id="@+id/statisticsFragment"
+            android:enabled="true"
+            android:icon="@drawable/ic_insert_chart_black_24dp"
+            android:title="@string/stats" />
+
+
+</menu>

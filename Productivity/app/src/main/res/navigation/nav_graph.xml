@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_graph"
+        app:startDestination="@id/taskListFragment">
+    <fragment
+            android:id="@+id/taskListFragment"
+            android:name="pl.edu.mimuw.students.Productivity.TaskListFragment"
+            android:label="Task List"
+            tools:layout="@layout/fragment_task_list">
+        <action
+                android:id="@+id/action_taskListFragment_to_testFragment3"
+                app:destination="@id/testFragment"
+                app:popUpTo="@id/taskListFragment" />
+        <action
+                android:id="@+id/action_taskListFragment_to_newTaskFragment"
+                app:destination="@id/newTaskFragment" />
+        <action
+                android:id="@+id/action_taskListFragment_to_settingsFragment"
+                app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/testFragment"
+            android:name="pl.edu.mimuw.students.Productivity.TestFragment"
+            android:label="TestFragment" />
+    <fragment
+            android:id="@+id/newTaskFragment"
+            android:name="pl.edu.mimuw.students.Productivity.NewTaskFragment"
+            android:label="Create New Task"
+            tools:layout="@layout/new_task_fragment">
+        <argument
+                android:name="isEdit"
+                android:defaultValue="-1"
+                app:argType="integer" />
+        <action
+                android:id="@+id/action_newTaskFragment_to_taskListFragment"
+                app:destination="@id/taskListFragment" />
+        <action
+                android:id="@+id/action_newTaskFragment_to_chooseCategoryFragment"
+                app:destination="@id/chooseCategoryFragment"
+                app:popUpTo="@id/newTaskFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/settingsFragment"
+            android:name="pl.edu.mimuw.students.Productivity.SettingsFragment"
+            android:label="SettingsFragment" />
+    <fragment
+            android:id="@+id/chooseCategoryFragment"
+            android:name="pl.edu.mimuw.students.Productivity.ChooseCategoryFragment"
+            android:label="choose_category_fragment"
+            tools:layout="@layout/choose_category_fragment" />
+    <fragment
+            android:id="@+id/queueFragment"
+            android:name="pl.edu.mimuw.students.Productivity.QueueFragment"
+            android:label="Today's Queue"
+            tools:layout="@layout/queue_fragment" />
+    <fragment
+            android:id="@+id/timerFragment"
+            android:name="pl.edu.mimuw.students.Productivity.TimerFragment"
+            android:label="Pomodoro Timer"
+            tools:layout="@layout/fragment_timer" />
+    <fragment
+            android:id="@+id/statisticsFragment"
+            android:name="pl.edu.mimuw.students.Productivity.StatisticsFragment"
+            android:label="Task Statistics"
+            tools:layout="@layout/fragment_statistics" />
+</navigation>

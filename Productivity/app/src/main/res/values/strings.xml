@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Productivity</string>
+    <string name="add_word">add_word</string>
+    <string name="button_save">Save</string>
+    <string name="empty_name">You must specify a task name</string>
+    <string name="zero_sessions">Good try, the task must have at least one session though</string>
+    <string name="too_many_sessions">Too many sessions scheduled, please reconsider life choices and decrease the number of sessions</string>
+    <string name="hint_new_task_name">Task Name</string>
+    <string name="hint_new_task_category">Category</string>
+    <string name="hint_new_task_no_sessions">Number Of Sessions</string>
+    <string name="notification_task_end">End of task</string>
+    <string name="notification_break_end">End of break</string>
+    <string name="notification_chanel_id">TIMER_CHANNEL_ID</string>
+    <string name="notification_chanel_name">Timer</string>
+
+    <string name="task_not_ready_error">No pl.edu.mimuw.students.productivity.Task</string>
+    <string name="category_not_ready_error">No pl.edu.mimuw.students.productivity.Category</string>
+    <string name="is_weekly">Weekly repetition of task</string>
+    <string name="mon_s_no">Monday session number</string>
+    <string name="tue_s_no">Tuesday session number</string>
+    <string name="wed_s_no">Wednesday session number</string>
+    <string name="thu_s_no">Thursday session number</string>
+    <string name="fri_s_no">Friday session number</string>
+    <string name="sat_s_no">Saturday session number</string>
+    <string name="sun_s_no">Sunday session number</string>
+    <string name="recurring_message">recurring</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_edit_task">Edit Task</string>
+    <string name="action_delete_task">Delete Task</string>
+    <string name="action_cancel_edit">Cancel Task</string>
+    <string name="choose_category">Choose Category</string>
+    <string name="add_new_category">Add New Category</string>
+
+    <string name="hint_session_length">Session length</string>
+    <string name="hint_short_break_length">Short break length</string>
+    <string name="hint_long_break_length">Long break length</string>
+    <string name="hint_cycle_length">Number of sessions per cycle</string>
+    <string name="hint_notify_end_sesion">Notification of session end</string>
+    <string name="hint_notify_end_break">Notification of break end</string>
+    <string name="hint_queue_reset_time">Queue reset time</string>
+    <string name="session_end_notification_title">Notification of session end</string>
+    <string name="in_minutes">in minutes</string>
+    <string name="reset_time_summary">number from 0 to 23</string>
+
+    <!-- TimerFragment -->
+    <string name="countdown_text">%1$d:%2$s%3$d</string>
+    <string name="description_task">%1$s\n%2$d\n%3$d</string>
+    <string name="description_break">Break</string>
+    <string name="add_task_to_queue">Add to queue</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empty_queue">Empty queue</string>
+    <string name="new_task_session_no_title">Number of sessions</string>
+    <string name="sess_no_title">Number of sessions:</string>
+    <string name="task_list_button">Task List Button</string>
+    <string name="test">test</string>
+    <string name="stats">Stats</string>
+    <string name="tasks">Tasks</string>
+    <string name="today">Today</string>
+    <string name="pomodoro">Pomodoro</string>
+    <string name="break_end_notification_title">Notification of break end</string>
+
+</resources>

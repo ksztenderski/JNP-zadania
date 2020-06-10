@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#03DAC5</color>
+    <color name="colorAccent">#008779</color>
+    <color name="buttonLabel">#FFFFFF</color>
+
+    <!-- TimerFragment -->
+    <color name="taskProgressBar">#4CAF50</color>
+    <color name="breakProgessBar">#2196F3</color>
+    <color name="finishingProgessBar">#D50000</color>
+    <color name="addButtonEnabled">#8BC34A</color>
+    <color name="addButtonDisabled">#C0C0C0</color>
+</resources>

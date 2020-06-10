@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <EditTextPreference
+        android:defaultValue="25"
+        android:key="session_length"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/in_minutes"
+        android:title="@string/hint_session_length"
+        app:iconSpaceReserved="false" />
+
+    <EditTextPreference
+        android:defaultValue="5"
+        android:key="short_break_length"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/in_minutes"
+        android:title="@string/hint_short_break_length"
+        app:iconSpaceReserved="false" />
+
+    <EditTextPreference
+        android:defaultValue="20"
+        android:key="long_break_length"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/in_minutes"
+        android:title="@string/hint_long_break_length"
+        app:iconSpaceReserved="false" />
+
+    <EditTextPreference
+        android:defaultValue="4"
+        android:key="sessions_per_cycle"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/hint_cycle_length"
+        app:iconSpaceReserved="false" />
+
+    <EditTextPreference
+        android:defaultValue="1"
+        android:key="queue_reset_time"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="@string/reset_time_summary"
+        android:title="@string/hint_queue_reset_time"
+        app:iconSpaceReserved="false" />
+
+    <SwitchPreferenceCompat
+        android:id="@+id/session_end_notification_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:defaultValue="true"
+        app:iconSpaceReserved="false"
+        app:key="session_end_notifications"
+        app:title="@string/session_end_notification_title" />
+
+    <SwitchPreferenceCompat
+        android:id="@+id/break_end_notification_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:defaultValue="true"
+        app:iconSpaceReserved="false"
+        app:key="break_end_notifications"
+        app:title="@string/break_end_notification_title" />
+
+</PreferenceScreen>
+
