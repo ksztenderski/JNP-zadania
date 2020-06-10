@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Plague</string>
+    <string name="stop">Stop</string>
+    <string name="pause">Pause</string>
+    <string name="start">Start</string>
+    <string name="restart">Restart</string>
+    <string name="number_of_threads">Number of threads</string>
+    <string name="simulation_time">Simulation time</string>
+    <string name="infection_probability">Infection probability</string>
+    <string name="death_probability">Death probability</string>
+    <string name="starting_number_of_infected">Starting number of infected</string>
+    <string name="infected_sleep_time">Infected sleep time</string>
+    <string name="healthy_sleep_time">Healthy sleep time</string>
+    <string name="timer_zero">00:00</string>
+    <string name="timer">%1$d:%2$s%3$d</string>
+    <string name="threads_healthy">Threads healthy: %1$d</string>
+    <string name="threads_infected">Threads infected: %1$d</string>
+    <string name="threads_dead">Threads dead: %1$d</string>
+    <string name="threads_working">Threads working: %1$d</string>
+</resources>

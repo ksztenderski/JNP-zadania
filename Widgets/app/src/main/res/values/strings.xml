@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Widgets</string>
+
+    <!-- MainActivity -->
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+
+    <!-- ButtonsFragment -->
+    <string name="togglebutton">ToggleButton</string>
+    <string name="switchButton">Switch</string>
+    <string name="radiobutton3">RadioButton3</string>
+    <string name="radiobutton2">RadioButton2</string>
+    <string name="radiobutton1">RadioButton1</string>
+    <string name="checkbox3">CheckBox3</string>
+    <string name="checkbox2">CheckBox2</string>
+    <string name="checkbox1">CheckBox1</string>
+    <string name="imagebutton">ImageButton</string>
+
+    <!-- WidgetsFragment -->
+    <string name="SeekBarProgress">SeekBar progress: %1$d</string>
+    <string name="SeekBarDiscreteProgress">SeekBarDiscrete progress: %1$d</string>
+    <string name="TimerProgress">Timer progress: %1$d</string>
+    <string name="countdownFinished">Countdown Finished!</string>
+    <string name="image">Image</string>
+</resources>
